@@ -1,0 +1,65 @@
+{
+    "platform": 64,
+    "controller": {
+        "player_count": "no_of_players",
+        "match_finished": {
+            "==": ["results_screen", 1]
+        },
+        "winner": {
+            "+": [1, {"-": ["first_place", "no_of_ai"]}]
+        },
+        "paused": {
+            "&&": [{"!=": ["results_screen", 1]}, {"==": ["race_in_progress", 0]}]
+        }
+    },
+    "pointers": [
+        {
+            "id": "p1_position",
+            "window": "SuperTuxKart",
+            "module": "supertuxkart.exe",
+            "initial_offset": "0x00C5C4E0",
+            "offsets": ["0x28", "0x0", "0x10", "0x334"],
+            "display": true
+        },
+        {
+            "id": "race_in_progress",
+            "window": "SuperTuxKart",
+            "module": "supertuxkart.exe",
+            "initial_offset": "0x00C625E0",
+            "offsets": ["0x58", "0x48", "0x28"],
+            "display": false
+        },
+        {
+            "id": "results_screen",
+            "window": "SuperTuxKart",
+            "module": "supertuxkart.exe",
+            "initial_offset": "0x00A325F0",
+            "offsets": ["0x1B0", "0x0", "0x1D0", "0x0", "0x1D0", "0x0", "0x1D0", "0x10", "0x1BC"],
+            "display": false
+        },
+        {
+            "id": "first_place",
+            "window": "SuperTuxKart",
+            "module": "supertuxkart.exe",
+            "initial_offset": "0x00C715E0",
+            "offsets": ["0x80", "0xB8", "0x0"],
+            "display": false
+        },
+        {
+            "id": "no_of_ai",
+            "window": "SuperTuxKart",
+            "module": "supertuxkart.exe",
+            "initial_offset": "0x00A326A0",
+            "offsets": ["0xB8", "0x288"],
+            "display": false
+        },
+        {
+            "id": "no_of_players",
+            "window": "SuperTuxKart",
+            "module": "supertuxkart.exe",
+            "initial_offset": "0x00C790C0",
+            "offsets": ["0x60"],
+            "display": false
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "platform": 32,
+    "controller": {
+        "player_count": 2,
+        "match_finished": {
+            "==": ["results_screen", 1]
+        },
+        "winner": "game_winner"
+    },
+    "pointers": [
+        {
+            "id": "results_screen",
+            "window": "Brawlhalla",
+            "module": "Adobe AIR.dll",
+            "initial_offset": "0x01315500",
+            "offsets": ["0x330", "0x7C", "0x4", "0x55C"],
+            "display": false
+        },
+        {
+            "id": "game_winner",
+            "window": "Brawlhalla",
+            "module": "Adobe AIR.dll",
+            "initial_offset": "0x01315500",
+            "offsets": ["0x330", "0x7C", "0x4", "0x63C"],
+            "display": false
+        }
+    ]
+}

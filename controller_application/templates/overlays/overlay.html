@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>game-overlay</title>
+	<script src="{{ url_for('static', filename='scripts/jquery-3.4.1.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='scripts/overlay.js') }}"></script>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/overlay.css') }}">
+</head>
+
+<body>
+    <img class="background" src="{{ url_for('static', filename='img/overlay.png') }}">
+	<div id="ui">
+        <div id="winner_container" class="container">
+        </div>
+        <div id="player_container" class="container">
+        </div>
+	</div>
+</body>

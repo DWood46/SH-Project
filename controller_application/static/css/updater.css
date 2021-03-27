@@ -1,0 +1,11 @@
+#scene_box { 
+    display:table-cell;
+}
+
+#games_box { 
+    display:table-cell;
+}
+
+#input_list {
+    display:table-cell;
+}

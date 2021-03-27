@@ -1,0 +1,12 @@
+{
+    "games": [
+        {
+            "name": "SuperTuxKart",
+            "file_name": "supertuxkart.json"
+        },
+        {
+            "name": "Brawlhalla",
+            "file_name": "brawlhalla.json"
+        }
+    ]
+}

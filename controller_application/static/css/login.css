@@ -1,0 +1,60 @@
+html {
+	overflow: hidden;
+}
+
+body {
+	margin: 0px !important;
+	font-family: Sans-Serif;
+}
+
+.background {
+	position: absolute;
+	z-index: -1;
+}
+
+#player_container {
+	position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+	width: 380px;
+	height: 360px;
+	top: 200px;
+    right: 20px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+#winner_container {
+    margin: auto;
+    top: 50px;
+    text-align: center;
+    font-size: 64px;
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+.player {
+	display: flex;
+	align-items: center;
+	vertical-align: middle;
+	margin-bottom: 12px;
+}
+
+.name {
+	font-size: 30px;
+	margin: 0 5px 0 10px;
+	width: 300px;
+	text-align: left;
+	color: black;
+}
+
+.score {
+	font-size: 30px;
+	margin: 0 10px 0 5px;
+	width: 70px;
+	text-align: right;
+	color: black;
+}

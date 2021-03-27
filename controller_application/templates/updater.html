@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Config</title>
+	<script src="{{ url_for('static', filename='scripts/jquery-3.4.1.min.js') }}"></script>
+    <script>
+        var obs_host = "{{ obs_address }}";
+        var obs_pass = "{{ obs_password }}";
+    </script>
+	<script src="{{ url_for('static', filename='scripts/updater.js') }}"></script>
+	<script src="{{ url_for('static', filename='scripts/obs-websocket.js') }}"></script>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/updater.css') }}">
+</head>
+
+<body>
+	<div id="wrapper">
+        <div id="scene_box">
+			<select id="scenes"></select>
+			<button id="update_scene" class="scene" onclick="update_scene()">Change Scene</button>
+		</div>
+        <br>
+        <div id="games_box">
+            <select name="game" id="games"></select>
+            <button id="update_game" class="game" onclick="update_game()">Change Game</button>
+		</div>
+        <br>
+        <div id="names_box">
+		</div>
+	</div>
+</body>

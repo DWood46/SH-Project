@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+    <title>Web configuration login</title>
+    <link href="{{ url_for('static', filename='login.css') }}" rel="stylesheet" media="screen">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+</head>
+<body>
+<div id="wrapper">
+    <div id="container">
+        <form action="" method="post">
+            <input type="password" placeholder="Password" name="password">
+            <input class="btn btn-default" type="submit" value="Login">
+        </form>
+    </div>
+    <div id="error">
+        {% if error %}
+        <p><strong>Error:</strong> {{ error }}
+            {% endif %}
+    </div>
+</div>
+</body>
+</html>
